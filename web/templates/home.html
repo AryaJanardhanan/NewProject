@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/sample.css' %}">
+</head>
+<body>
+    <h2>Welcome Home</h2>
+    <a href="{% url 'abt' %}">About</a>
+    <a href="{% url 'register' %}">Register</a>
+    <a href="{% url 'logout' %}">Logout</a>
+
+    <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_PZ2y9L49ziaNyV" async> </script> </form>
+</body>
+</html>
